@@ -69,6 +69,7 @@ String asztal ="";
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        etlap.setEnabled(false);
         jScrollPane3.setViewportView(etlap);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -239,6 +240,7 @@ String asztal ="";
 
     private void pirosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pirosActionPerformed
         rendeltEtelek.clearSelection();
+        etlap.enable();
         asztal = "piros";
         DefaultListModel dlm = new DefaultListModel();
         dlm.addElement(asztal);
@@ -247,6 +249,7 @@ String asztal ="";
 
     private void kekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kekActionPerformed
        rendeltEtelek.clearSelection();
+       etlap.enable();
         asztal = "kek";
         DefaultListModel dlm = new DefaultListModel();
         dlm.addElement(asztal);
@@ -255,6 +258,7 @@ String asztal ="";
 
     private void zoldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zoldActionPerformed
       rendeltEtelek.clearSelection();
+      etlap.enable();
         asztal = "zold";
         DefaultListModel dlm = new DefaultListModel();
         dlm.addElement(asztal);
@@ -263,6 +267,7 @@ String asztal ="";
 
     private void feherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_feherActionPerformed
         rendeltEtelek.clearSelection();
+        etlap.enable();
         asztal = "feher";
         DefaultListModel dlm = new DefaultListModel();
         dlm.addElement(asztal);
